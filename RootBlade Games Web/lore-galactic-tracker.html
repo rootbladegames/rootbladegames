@@ -1,0 +1,410 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Expediente: Galactic Tracker - RootBlade Games</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <link rel="stylesheet" href="assets/css/main.css" />
+        <style>
+            /* Estilo personalizado para el buscador */
+            .search-box {
+                width: 100%;
+                padding: 10px;
+                margin-bottom: 20px;
+                border: 2px solid #e5e5e5;
+                border-radius: 4px;
+                font-family: inherit;
+            }
+            .search-box:focus {
+                border-color: #d52349;
+                outline: none;
+            }
+            /* Suavizar la desaparición de elementos filtrados */
+            .lore-item {
+                transition: all 0.3s ease;
+            }
+            /* Efecto hover fino para el botón de subir */
+            #btnScrollTop:hover {
+                background-color: #b01b3a !important;
+            }
+            /* SOLUCIÓN: Desplaza todas las imágenes destacadas del lore unos píxeles hacia abajo */
+            .image.featured {
+                margin-top: 15px !important;
+            }
+        </style>
+    </head>
+    <body class="left-sidebar is-preload">
+        <div id="page-wrapper">
+
+            <section id="header">
+                    <h1><a href="index.html">RootBlade Games</a></h1>
+                    <nav id="nav">
+                        <ul>
+                            <li><a href="index.html">Inicio</a></li>
+                            <li>
+                                <a href="#">Juegos</a>
+                                <ul>
+                                    <li><a href="index.html#galactic-tracker">Galactic Tracker (Ya Disponible)</a></li>
+                                    <li><a href="index.html#chicken-fury">Chicken Fury (En Desarrollo)</a></li>
+                                </ul>
+                            </li>
+                            <li class="current"><a href="lore.html">Universo y Lore</a></li>
+                            <li><a href="devlog.html">Devlog</a></li>
+                            <li><a href="contacto.html">Contacto</a></li>
+                        </ul>
+                    </nav>
+                </section>
+
+            <section id="main">
+                    <div class="container">
+                        <div class="row">
+                            
+                            <div class="col-4 col-12-medium">
+                                <section class="box">
+                                    <header>
+                                        <h3>Terminal de Datos</h3>
+                                    </header>
+                                    
+                                    <input type="text" id="loreSearch" class="search-box" placeholder="Busca 'heroes', 'criaturas', 'planetas'..." onkeyup="filterLore()" />
+
+                                    <p><strong>Registros del Cosmos</strong></p>
+                                    <ul class="divided" id="searchIndex">
+                                        <li class="index-item"><a href="#tracker">Tracker <span style="display:none;">[heroes] heroes</span></a></li>
+                                        <li class="index-item"><a href="#vector">Vector <span style="display:none;">[heroes] heroes</span></a></li>
+                                        <li class="index-item"><a href="#aprendiz">Aprendiz <span style="display:none;">[heroes] heroes</span></a></li>
+                                        <li class="index-item"><a href="#korax">Korax <span style="display:none;">[criaturas] criaturas</span></a></li>
+                                        <li class="index-item"><a href="#kobolds">Kobolds <span style="display:none;">[criaturas] criaturas</span></a></li>
+                                        <li class="index-item"><a href="#gaya">Gaya <span style="display:none;">[planetas] planetas</span></a></li>
+                                        <li class="index-item"><a href="#rivalta">Rivalta <span style="display:none;">[planetas] planetas</span></a></li>
+                                        <li class="index-item"><a href="#umbryth">Umbryth <span style="display:none;">[planetas] planetas</span></a></li>
+                                        <li class="index-item"><a href="#cryon">Cryon <span style="display:none;">[planetas] planetas</span></a></li>
+                                        <li class="index-item"><a href="#vesper7">Vesper-7 <span style="display:none;">[planetas] planetas</span></a></li>
+                                    </ul>
+                                    <footer>
+                                        <a href="lore.html" class="button alt icon solid fa-arrow-left">Volver al Hub</a>
+                                    </footer>
+                                </section>
+                            </div>
+
+                            <div class="col-8 col-12-medium imp-medium">
+                                <article class="box post">
+                                    <header>
+                                        <h2>Archivos Clasificados: Sistema Estelar</h2>
+                                        <p>Base de datos interplanetaria de la misión de exploración.</p>
+                                    </header>
+                                    
+                                    <p>
+                                        Bienvenido a los registros detallados del cosmos. Este compendio contiene análisis biológicos, descripciones de comportamiento, especificaciones de personal y datos geográficos recopilados. Utiliza la terminal de búsqueda para filtrar la información crítica de inmediato.
+                                    </p>
+
+                                    <h2 class="category-title" style="border-bottom: 2px solid #e5e5e5; padding-bottom: 10px; margin-top: 40px;">Registro de Tripulación y Aliados</h2>
+
+                                    <section id="tracker" class="lore-item">
+                                        <header>
+                                            <h3>Sujeto: Tracker (El Turista Accidental) <span style="display:none;">[heroes] heroes</span></h3>
+                                        </header>
+                                        <div class="row">
+                                            <div class="col-4 col-12-small">
+                                                <span class="image featured"><img src="images/tracker.png" alt="Unidad Tracker" /></span>
+                                            </div>
+                                            <div class="col-8 col-12-small">
+                                                <p>
+                                                    Un terrícola común que terminó en el lugar equivocado (o correcto) en el momento justo. Sin entrenamiento previo pero con una curiosidad inagotable, Tracker recorre el cosmos armado solo con su ingenio y la tecnología de una nave que aún no termina de entender. Es una unidad ágil diseñada para la evasión extrema y el análisis de patrones de ataque en milisegundos.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </section>
+
+                                    <hr class="lore-item" />
+
+                                    <section id="vector" class="lore-item">
+                                        <header>
+                                            <h3>Sujeto: Vector (El Tanque Andante) <span style="display:none;">[heroes] heroes</span></h3>
+                                        </header>
+                                        <div class="row">
+                                            <div class="col-4 col-12-small">
+                                                <span class="image featured"><img src="images/vector.png" alt="Sujeto Vector" /></span>
+                                            </div>
+                                            <div class="col-8 col-12-small">
+                                                <p>
+                                                    No te dejes engañar por su apariencia humana; Vector es la cima de la ingeniería biotecnológica de Gaya. Actúa como un tanque imparable, capaz de absorber castigo masivo mientras devuelve golpes devastadores. Es frío, eficiente y posee una tecnología tan avanzada que hace que las herramientas de la Tierra parezcan juguetes de madera.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </section>
+
+                                    <hr class="lore-item" />
+
+                                    <section id="aprendiz" class="lore-item">
+                                        <header>
+                                            <h3>Sujeto: Aprendiz (El Pequeño Mago) <span style="display:none;">[heroes] heroes</span></h3>
+                                        </header>
+                                        <div class="row">
+                                            <div class="col-4 col-12-small">
+                                                <span class="image featured"><img src="images/aprendiz.png" alt="Sujeto Aprendiz" /></span>
+                                            </div>
+                                            <div class="col-8 col-12-small">
+                                                <p>
+                                                    Para él, las leyes de la física son simples sugerencias. Este joven mago canaliza energías que desafían toda lógica humana, eliminando amenazas sin disparar una sola bala. Eso sí: es un cañón de cristal. Su poder ofensivo es absoluto, pero su resistencia física es casi nula; si parpadeas, podrías perderlo.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </section>
+
+                                    <h2 class="category-title" style="border-bottom: 2px solid #e5e5e5; padding-bottom: 10px; margin-top: 50px;">Bestiario y Amenazas Ecológicas</h2>
+
+                                    <section id="korax" class="lore-item">
+                                        <header>
+                                            <h3>Amenaza: Korax, el Tanque Andante <span style="display:none;">[criaturas] criaturas</span></h3>
+                                        </header>
+                                        <div class="row">
+                                            <div class="col-8 col-12-small">
+                                                <p>
+                                                    Una especie con forma de escarabajo, pero en una versión colosal adaptada a los entornos más hostiles de Gaya. Su cuerpo está recubierto por un caparazón oscuro y endurecido, tan resistente que puede recibir múltiples impactos sin mostrar señales de daño alguno. Sin embargo, esto no significa que sea invencible… toda criatura tiene su forma de perecer.
+                                                </p>
+                                                <p>
+                                                    Korax no es particularmente veloz, pero compensa esta limitación con una presencia imponente y una agresividad territorial absoluta. Su cuerno curvado funciona como un ariete natural, capaz de embestir con fuerza suficiente para destrozar formaciones rocosas y eliminar amenazas de un solo golpe.
+                                                </p>
+                                            </div>
+                                            <div class="col-4 col-12-small">
+                                                <span class="image featured"><img src="images/Korax Perspectiva 1.png" alt="Korax el Tanque Andante" /></span>
+                                            </div>
+                                        </div>
+                                        <p>
+                                            Suele habitar zonas pantanosas o llanuras contaminadas, donde el suelo blando no representa ningún obstáculo para su avance constante. De hecho, su peso y resistencia lo convierten en una fuerza imparable cuando decide moverse. Es una de las primeras criaturas a las que se enfrenta el Tracker, convirtiéndose en una prueba temprana de supervivencia. No es el más rápido, ni el más letal… pero sí uno de los más difíciles de derribar sin comprender sus debilidades. En Gaya, enfrentarlo sin preparación no es valentía… es un error.
+                                        </p>
+                                    </section>
+
+                                    <hr class="lore-item" />
+
+                                    <section id="kobolds" class="lore-item">
+                                        <header>
+                                            <h3>Kobolds, Errantes Astutos <span style="display:none;">[criaturas] criaturas</span></h3>
+                                        </header>
+                                        <div class="row">
+                                            <div class="col-4 col-12-small">
+                                                <span class="image featured"><img src="images/Kobold Perspectiva 1.png" alt="Kobold Errante" /></span>
+                                            </div>
+                                            <div class="col-8 col-12-small">
+                                                <p>
+                                                    Pequeñas criaturas reptilianas de postura erguida, los Kobolds destacan no por su fuerza, sino por su inteligencia y adaptabilidad. De complexión ágil y movimientos rápidos, utilizan herramientas y armas improvisadas, siendo la espada corta su elección más común.
+                                                </p>
+                                                <p>
+                                                    Son seres sociales que rara vez se encuentran solos. Prefieren moverse en grupos, donde cada individuo cumple un rol: exploradores, recolectores, guardianes o artesanos. Esta organización les permite sobrevivir incluso en los entornos más hostiles de Gaya. A diferencia de otras criaturas del planeta, los Kobolds no dependen únicamente del instinto. Observan, aprenden y se adaptan.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <p>
+                                            Son capaces de reconocer patrones, avoid depredadores mayores y aprovechar recursos que otras especies ignoran. Se les puede ver recolectando cristales, encendiendo hogueras o patrullando su territorio con armas en mano. Aunque no son intrínsecamente agresivos, reaccionan con rapidez ante cualquier threat, atacando en grupo con coordinación sorprendente. Su presencia no se limita a Gaya. Existen registros de Kobolds en otros planetas, lo que sugiere una capacidad de migración o expansión aún no comprendida. Encontrarse con uno puede no parecer peligroso… Encontrarse con varios, rara vez termina bien.
+                                        </p>
+                                    </section>
+
+                                    <h2 class="category-title" style="border-bottom: 2px solid #e5e5e5; padding-bottom: 10px; margin-top: 50px;">Cartografía Estelar: Planetas Encontrados</h2>
+
+                                    <section id="gaya" class="lore-item">
+                                        <header>
+                                            <h3>Planeta: Gaya <span style="display:none;">[planetas] planetas</span></h3>
+                                        </header>
+                                        <div class="row">
+                                            <div class="col-4 col-12-small">
+                                                <span class="image featured"><img src="images/Planeta Gaya.png" alt="Planeta Gaya" /></span>
+                                            </div>
+                                            <div class="col-8 col-12-small">
+                                                <p>
+                                                    Un reflejo salvaje de la Tierra donde la evolución tomó el camino de la guerra. Hogar del temible Korax, un tanque biológico andante, y del escurridizo Jabalí de Espino, cuyo veneno no conoce cura. ¿Podrás sobrevivir a la fauna que reclama este mundo?
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </section>
+
+                                    <hr class="lore-item" />
+
+                                    <section id="rivalta" class="lore-item">
+                                        <header>
+                                            <h3>Planeta: Rivalta <span style="display:none;">[planetas] planetas</span></h3>
+                                        </header>
+                                        <p>
+                                            Un mundo de fuego eterno y ríos de lava que desafían a la vida. Entre las llamas acechan los Ents Volcánicos, criaturas arbóreas de una velocidad aterradora. Todo está bajo la mirada de El Guardián. ¿Tienes el valor para desafiar al protector del núcleo?
+                                        </p>
+                                    </section>
+
+                                    <hr class="lore-item" />
+
+                                    <section id="umbryth" class="lore-item">
+                                        <header>
+                                            <h3>Planeta: Umbryth <span style="display:none;">[planetas] planetas</span></h3>
+                                        </header>
+                                        <div class="row">
+                                            <div class="col-4 col-12-small">
+                                                <span class="image featured"><img src="images/Planeta Umbryth.png" alt="Planeta Umbryth" /></span>
+                                            </div>
+                                            <div class="col-8 col-12-small">
+                                                <p>
+                                                    No dejes que su belleza vegetal te engañe: aquí, cada hoja es una cuchilla y cada flor un arma venenosa. Mientras las plantas cazan en silencio, se dice que El Olvidado vaga por las sombras del bosque eterno. ¿Serás tú quien logre encontrarlo... o su próxima presa?
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </section>
+
+                                    <hr class="lore-item" />
+
+                                    <section id="cryon" class="lore-item">
+                                        <header>
+                                            <h3>Planeta: Cryon <span style="display:none;">[planetas] planetas</span></h3>
+                                        </header>
+                                        <div class="row">
+                                            <div class="col-4 col-12-small">
+                                                <span class="image featured"><img src="images/Planeta Cryon.png" alt="Planeta Cryon" /></span>
+                                            </div>
+                                            <div class="col-8 col-12-small">
+                                                <p>
+                                                    Un páramo sumido en tormentas de nieve y temperaturas bajo cero. Entre el hielo milenario aguardan criaturas de poder desconocido y rastros de una tecnología antigua olvidada por el tiempo. Las fuerzas más poderosas de Cryon te esperan. ¿Superarás el frío o quedarás congelado para siempre?
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </section>
+
+                                    <hr class="lore-item" />
+
+                                    <section id="vesper7" class="lore-item">
+                                        <header>
+                                            <h3>Planeta: Vesper-7 <span style="display:none;">[planetas] planetas</span></h3>
+                                        </header>
+                                        <div class="row">
+                                            <div class="col-4 col-12-small">
+                                                <span class="image featured"><img src="images/Vesper-7.png" alt="Planeta Vesper-7" /></span>
+                                            </div>
+                                            <div class="col-8 col-12-small">
+                                                <p>
+                                                    Vesper-7 es una frontera ciega en los mapas estelares. No es un mundo muerto, sino un mundo que nunca ha sido escuchado. A pesar de sus cielos apagados y sus montañas de piedra oscura, el planeta palpita con una vida propio: corrientes de agua subterránea que alimentan una flora extraña y criaturas que se moverán entre las sombras de cuevas nunca antes pisadas.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </section>
+
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+            <section id="footer">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12">
+                                <section>
+                                    <header>
+                                        <h2>Conecta con RootBlade Games</h2>
+                                    </header>
+                                    <ul class="social">
+                                        <li><a class="icon brands fa-facebook-f" href="https://www.facebook.com/Untaljuguito"><span class="label">Facebook</span></a></li>
+                                        <li><a class="icon brands fa-tiktok" href="https://www.tiktok.com/@unpocodefantasia?is_from_webapp=1&sender_device=pc"><span class="label">TikTok</span></a></li>
+                                    </ul>
+                                    <ul class="contact">
+                                        <li>
+                                            <h3>Ubicación</h3>
+                                            <p>Barcelona, Anzoátegui<br />Venezuela</p>
+                                        </li>
+                                        <li>
+                                            <h3>Correo</h3>
+                                            <p><a href="mailto:rootbladegames@gmail.com">rootbladegames@gmail.com</a></p>
+                                        </li>
+                                    </ul>
+                                </section>
+                            </div>
+                            <div class="col-12">
+                                <div id="copyright">
+                                    <ul class="links">
+                                        <li>&copy; RootBlade Games. Todos los derechos reservados.</li><li>Diseño base: <a href="http://html5up.net">HTML5 UP</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+        </div>
+
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/jquery.dropotron.min.js"></script>
+        <script src="assets/js/browser.min.js"></script>
+        <script src="assets/js/breakpoints.min.js"></script>
+        <script src="assets/js/util.js"></script>
+        <script src="assets/js/main.js"></script>
+
+        <script>
+            function filterLore() {
+                var input = document.getElementById('loreSearch');
+                var filter = input.value.toLowerCase();
+                
+                // 1. Filtrar las secciones de contenido de la derecha
+                var sections = document.getElementsByClassName('lore-item');
+                for (var i = 0; i < sections.length; i++) {
+                    var section = sections[i];
+                    if (section.tagName.toLowerCase() === 'section') {
+                        var text = section.textContent.toLowerCase();
+                        if (text.includes(filter)) {
+                            section.style.display = "";
+                        } else {
+                            section.style.display = "none";
+                        }
+                    }
+                }
+                
+                // 2. Filtrar los enlaces del índice de la barra izquierda
+                var indexItems = document.getElementsByClassName('index-item');
+                for (var k = 0; k < indexItems.length; k++) {
+                    var li = indexItems[k];
+                    var indexText = li.textContent.toLowerCase();
+                    if (indexText.includes(filter)) {
+                        li.style.display = "";
+                    } else {
+                        li.style.display = "none";
+                    }
+                }
+
+                // 3. Controlar separadores (hr) y títulos de categorías grandes
+                var separators = document.querySelectorAll('hr.lore-item');
+                var categories = document.getElementsByClassName('category-title');
+                
+                if (filter !== "") {
+                    for (var j = 0; j < separators.length; j++) {
+                        separators[j].style.display = "none";
+                    }
+                    for (var m = 0; m < categories.length; m++) {
+                        categories[m].style.display = "none";
+                    }
+                } else {
+                    for (var j = 0; j < separators.length; j++) {
+                        separators[j].style.display = "";
+                    }
+                    for (var m = 0; m < categories.length; m++) {
+                        categories[m].style.display = "";
+                    }
+                }
+            }
+
+            // LÓGICA DEL BOTÓN DE RETORNO AL TOPE
+            window.onscroll = function() { scrollFunction() };
+
+            function scrollFunction() {
+                var btn = document.getElementById("btnScrollTop");
+                if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+                    btn.style.display = "block";
+                } else {
+                    btn.style.display = "none";
+                }
+            }
+
+            function scrollToTop() {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            }
+        </script>
+
+        <button id="btnScrollTop" onclick="scrollToTop()" style="display: none; position: fixed; bottom: 20px; right: 20px; z-index: 99; border: none; outline: none; background-color: #d52349; color: white; cursor: pointer; padding: 15px; border-radius: 4px; font-weight: bold; box-shadow: 0px 4px 6px rgba(0,0,0,0.1); transition: background-color 0.3s;">&uarr; Arriba</button>
+
+    </body>
+</html>
