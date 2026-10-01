@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Política de Privacidad - Tasa Total</title>
+    <style>
+        body { font-family: sans-serif; line-height: 1.6; padding: 20px; max-width: 800px; margin: auto; color: #333; }
+        h1 { color: #2c3e50; }
+        h2 { color: #34495e; margin-top: 20px; }
+    </style>
+</head>
+<body>
+    <h1>Política de Privacidad de Tasa Total</h1>
+    <p><strong>Última actualización:</strong> 1 de octubre de 2026</p>
+    <p>Esta página le informa sobre nuestras políticas con respecto a la recopilación, el uso y la divulgación de información personal cuando utiliza nuestra aplicación.</p>
+    
+    <h2>1. Recopilación y uso de información</h2>
+    <p>Para una mejor experiencia, es posible que le pidamos que nos proporcione cierta información de identificación personal, incluyendo, entre otros, el ID de publicidad de Android y datos de Google Play Services necesarios para el funcionamiento de los widgets y la visualización de tasas.</p>
+
+    <h2>2. Servicios de Terceros</h2>
+    <p>La aplicación utiliza servicios de terceros que pueden recopilar información utilizada para identificarle:</p>
+    <ul>
+        <li><strong>Google Play Services:</strong> Para gestionar el rendimiento, las preferencias de usuario y el funcionamiento general de la app y sus widgets.</li>
+        <li><strong>AdMob:</strong> Para mostrar anuncios publicitarios (durante la fase de pruebas y uso de la aplicación).</li>
+    </ul>
+
+    <h2>3. Seguridad</h2>
+    <p>Valoramos su confianza en proporcionarnos su información personal, por lo que nos esforzamos en utilizar medios comercialmente aceptables para protegerla. Sin embargo, recuerde que ningún método de transmisión por Internet o método de almacenamiento electrónico es 100% seguro y confiable.</p>
+
+    <h2>4. Contacto</h2>
+    <p>Si tiene preguntas o sugerencias sobre esta política, contáctenos en: <strong>rootbladegames@gmail.com</strong></p>
+</body>
+</html>
